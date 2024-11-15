@@ -1,0 +1,1034 @@
+$Max directives: 8   
+$Max escort ships: 9  
+$Scale Gauges: No 
+
+#Gauge Config
+	$Ships: ( "GTF Hercules Mark II" )
+ 	$Base: (1600, 900)
+ 	$Force Scaling Above: (1920, 1080)
+ 	;$Min: (1024, 576)
+ 	$Gauges:
+
+	;;RTT Gauges;;
+  		+Support:
+ 			Origin: (0.0, 0.0)
+ 			Offset: (0, 0)
+			Cockpit Target: HerculesM2_CP
+				Canvas Size: (173, 39)
+				Display Offset: (294, 816)
+				Display Size: (142, 33)
+ 			Font: 2
+ 			Filename: Support
+ 			Header Offsets: (5,3)
+ 			Text Y-offset: 20
+ 			Dock Status X-offset: 15
+ 			Dock Time X-offset: 110
+  		+Damage:
+ 			Origin: (0, 0)
+ 			Offset: (0, 0)
+			Cockpit Target: HerculesM2_CP
+				Canvas Size: (237, 131)
+				Display Offset: (60, 137)
+				Display Size: (261, 144)
+ 			Font: 2
+ 			Top Background Filename: Damage_Top
+ 			Entry Background Filename: Damage_Entry
+ 			Bottom Background Filename: Damage_Bottom
+ 			Header Offsets: (5,3) 
+ 			Hull Integrity Offsets: (15,25) 	
+			Hull Integrity Value X-offset: 220 
+ 			Top Background Height: 40 
+ 			Subsystem Entry Height: 16 
+ 			Subsystem List Start Offsets: (30,45)
+ 			Subsystem Entry Value X-offset: 220 
+ 			Bottom Background Offset: 0
+ 		+Wingman Status:
+ 			Origin: (0.0, 0.0)
+ 			Offset: (0, 0)
+			Cockpit Target: HerculesM2_CP
+				Canvas Size: (308, 86)
+				Display Offset: (745, 60)
+				Display Size: (229, 64)
+ 			Font: 2
+ 			Left Background Filename: Wingman_Left
+ 			Entry Background Filename: Wingman_Entry
+ 			Right Background Filename: Wingman_Right
+ 			Dot Filename: 2_wingman4
+ 			Header Offsets: (5,3) 
+ 			Left Background Width: 114
+ 			Entry Width: 57
+ 			Single Wing Offsets: (31,20) 
+ 			Multiple Wing Start Offsets: (62,20) 
+ 			Wing Name Offsets: (35, 50)
+ 			Dot Offsets: (29,5) (19,20) (39,20) (29,35) (12,35) (46,35)
+			Expansion Mode: Right
+  		+Auto Speed:
+ 			Origin: (0.0, 0.0)
+ 			Offset: (0, 0)
+			Cockpit Target: HerculesM2_CP
+				Canvas Size: (90, 31)
+				Display Offset: (546, 318)
+				Display Size: (90, 31)
+ 			Font: 2
+ 			Filename: AutoToggle
+ 			Auto Offsets: (91,32)
+ 			Speed Offsets: (91,32)
+  		+Auto Target:
+ 			Origin: (0.0, 0.0)
+ 			Offset: (0, 0)
+			Cockpit Target: HerculesM2_CP
+				Canvas Size: (90, 31)
+				Display Offset: (836, 318)
+				Display Size: (90, 31)
+ 			Font: 2
+ 			Filename: AutoToggle
+ 			Auto Offsets: (91,32)
+ 			Target Offsets: (91,32)
+  		+Countermeasures:
+   	 		Origin: (0.0, 0.0)
+    		Offset: (0, 0)
+			Cockpit Target: HerculesM2_CP
+				Canvas Size: (100, 25)
+				Display Offset: (871, 293)
+				Display Size: (100, 25)
+ 			Font: 2
+    		Filename: Aux_Gauges_CM
+    		Text Offsets: (60,8)
+ 			Value Offsets: (20,8)
+  		+Directives:
+ 			Origin: (0.0, 0.0)
+ 			Offset: (0, 0)
+			Cockpit Target: HerculesM2_CP
+				Canvas Size: (256, 151)
+				Display Offset: (125, 850)
+				Display Size: (273, 161)
+ 			Font: 2
+ 			Top Background Filename: Directives_Top
+ 			Entry Background Filename: Directives_Entry
+ 			Bottom Background Filename: Directives_Entry
+ 			Header Offsets: (5,4)
+ 			Top Background Height: 20
+ 			List Start Offsets: (20,23)
+ 			Entry Height: 15
+ 			Max Line Width: 245
+  		+Weapons:
+ 			Origin: (0.0, 0.0)
+ 			Offset: (0, 0)
+			Cockpit Target: HerculesM2_CP
+				Canvas Size: (245, 92)
+				Display Offset: (746, 125)
+				Display Size: (227, 131)
+ 			Font: 2
+ 			Primary List Top Background Filename: Weapons_TP
+  			Alt Ballistic Filename: Weapons_TP
+ 			Primary List Middle Background Filename: Weapons_Entry
+  			Alt Ballistic Filename: Weapons_Entry
+ 			Primary List Bottom Background Filename: Weapons_Entry
+  			Alt Ballistic Filename: Weapons_Entry
+ 			Secondary List Top Background Filename: Weapons_TS
+  			Alt Ballistic Filename: Weapons_TS
+ 			Secondary List Entry Background Filename: Weapons_Entry
+  			Alt Ballistic Filename: Weapons_Entry
+ 			Secondary List Bottom Background Filename: Weapons_Bottom
+  			Alt Ballistic Filename: Weapons_Bottom
+ 			Header Offsets: (17,3)
+  			Alt Ballistic Offsets: (17,3)
+ 			Top Primary Background X-offset: 12
+  			Alt Ballistic X-offset: 12
+ 			Text X-offset: 12
+  			Alt Ballistic X-offset: 12
+ 			Top Primary Frame Height: 33
+ 			Top Secondary Frame Height: 12 
+ 			Primary List Start Y-offset: 20
+ 			Secondary List Start Y-offset: 6 
+ 			Primary Weapon Ammo X-offset: 235
+ 			Primary Weapon Link X-offset: 33
+ 			Primary Weapon Name X-offset: 42
+ 			Secondary Weapon Ammo X-offset: 235 
+ 			Secondary Weapon Linked X-offset: 25
+ 			Secondary Weapon Name X-offset: 42
+ 			Secondary Weapon Reload X-offset: 2
+ 			Primary Weapon Entry Height: 19
+ 			Secondary Weapon Entry Height: 19
+  		+Player Shields:
+    		Scale Gauge: YES
+    		Origin: (0.0, 0.0)
+    		Offset: (0, 0)
+			Cockpit Target: HerculesM2_CP
+				Canvas Size: (112, 93)
+				Display Offset: (714, 473)
+				Display Size: (104, 175)
+		+Target Shields:    			
+			Scale Gauge: YES
+    		Origin: (0.0, 0.0)
+    		Offset: (0, 0)
+			Cockpit Target: HerculesM2_CP
+				Canvas Size: (112, 93)
+				Display Offset: (519, 473)
+				Display Size: (104, 175)
+  		+Escort View:
+ 			Origin: (0, 0)
+ 			Offset: (0, 0)
+			Cockpit Target: HerculesM2_CP
+				Canvas Size: (239, 195)
+				Display Offset: (544, 851)
+				Display Size: (268, 162)
+ 			Font: 2
+ 			Top Background Filename: Escort_Top
+ 			Entry Background Filename: Escort_Entry
+ 			Bottom Background Filename: Escort_Entry
+ 			Entry Height: 19
+ 			Header Text: Monitoring
+ 			Header Offsets: (7,5)
+ 			List Start Offsets: (0,21)
+ 			Hull X-offset: 200
+ 			Name X-offset: 10
+ 			Status X-offset: -15
+ 			Ship Name Max Width: 185
+  		+Mission Time:
+ 			Origin: (0.0, 0.0)
+ 			Offset: (0, 0)
+			Cockpit Target: HerculesM2_CP
+				Canvas Size: (76, 38)
+				Display Offset: (507, 808)
+				Display Size: (76, 38)
+ 			Font: 2
+ 			Filename: Aux_Gauges_Timer
+ 			Text Offsets: (15,8)
+ 			Value Offsets: (43,23)
+  		+Target Monitor:
+ 			Origin: (0.0, 0.0)
+ 			Offset: (0, 0)
+			Cockpit Target: HerculesM2_CP
+				Canvas Size: (219, 250)
+				Display Offset: (498, 58)
+				Display Size: (203, 237)
+ 			Font: 2
+ 			Monitor Filename: Target_Monitor
+ 			Integrity Bar Filename: Target_MonitorH
+			Viewport Offsets: (4,67)
+ 			Viewport Size: (208,179)
+ 			Integrity Bar Offsets: (211,83)
+ 			Integrity Bar Foreground Clip Height: 154
+ 			Status Offsets: (180,88)
+ 			Name Offsets: (14,0)
+ 			Class Offsets: (14,15)
+ 			Distance Offsets: (14,29)
+ 			Speed Offsets: (120,29)
+ 			Hull Offsets: (210,69)
+ 			Cargo Contents Offsets: (14,50)
+ 			Cargo Scan Start Offsets: (4,67)
+ 			Cargo Scan Size: (208,179)
+ 			Subsystem Name Offsets: (15,245)
+ 			Subsystem Integrity Offsets: (200,245)
+ 			Disabled Status Offsets: (75,100)
+			Wireframe: 0
+  		+Extra Target Data:
+ 			Origin: (0.0, 0.0)
+ 			Offset: (0, 0)
+			Cockpit Target: HerculesM2_CP
+				Canvas Size: (219, 42)
+				Display Offset: (498, 218)
+				Display Size: (151, 29)
+ 			Font: 2
+ 			Filename: Extra_Target
+ 			Bracket Offsets: (0,0)
+ 			Dock Offsets: (15,30)
+ 			Dock Max Width: 300
+ 			Order Offsets: (15,0)
+ 			Order Max Width: 300
+ 			Time Offsets: (15,15)
+  		+Radar:
+   		 	Origin: (0.0, 0.0)
+    		Offset: (0, 0)
+			Cockpit Target: HerculesM2_CP
+				Canvas Size: (314, 255)
+				Display Offset: (68, 285)
+				Display Size: (243, 197)
+ 			Font: 2
+    		Filename: Radar
+ 			Radar Center Offsets: (154,128)
+ 			Radar Size: (288,240)
+ 			Infinity Distance Offsets: (276,225)
+ 			Long Distance Offsets: (272,225)
+ 			Short Distance Offsets: (278,225)
+  		+Afterburner Energy:
+ 			Origin: (0, 0)
+ 			Offset: (0, 0)
+			Cockpit Target: HerculesM2_CP
+				Canvas Size: (37, 256)
+				Display Offset: (883, 413)
+				Display Size: (49, 590)
+ 			Font: 2
+			Filename: AB_WP_Energy3
+			Foreground Clip Height: 219
+  		+Weapon Energy:
+ 			Origin: (0, 0)
+ 			Offset: (0, 0)
+			Cockpit Target: HerculesM2_CP
+				Canvas Size: (37, 256)
+				Display Offset: (970, 413)
+				Display Size: (49, 590)
+ 			Font: 2
+			Filename: AB_WP_Energy3
+			Foreground Clip Height: 219
+			Text Offsets: (38, 257)
+  		+Throttle:
+   			Origin: (0.0, 0.0)
+   			Offset: (0, 0)
+			Cockpit Target: HerculesM2_CP
+				Canvas Size: (153, 256)
+				Display Offset: (117, 407)
+				Display Size: (136, 407)
+   			Font: 2
+			Filename: Throttle
+			Foreground Clip Bottom Y-offset: 250
+			Foreground Clip Width: 50
+			Foreground Clip Height: 150
+			Afterburner Clip Height: 50	
+			Show Background: Yes
+			Show Max Speed Label: No
+			Show Min Speed Label: No
+			Orbit Center Offsets: (10049, 150)
+			Orbit Radius: 10000
+  		+Threat Indicator:
+   			Origin: (0.0, 0.0)
+   			Offset: (0, 0)
+			Cockpit Target: HerculesM2_CP
+				Canvas Size: (256, 128)
+				Display Offset: (63, 5)
+				Display Size: (256, 128)
+			Arc Filename: Threat_Indicator_Box
+			Dumbfire Filename: Threat_Indicator_GF
+			Lock Filename: Threat_Indicator_LO
+			Dumbfire Offsets: (0, 0)
+			Lock Offsets: (0, 0)
+  		+Kills:
+ 			Origin: (0.0, 0.0)
+ 			Offset: (0, 0)
+			Cockpit Target: HerculesM2_CP
+				Canvas Size: (130, 25)
+				Display Offset: (843, 262)
+				Display Size: (130, 25)
+ 			Font: 2
+ 			Filename: Aux_Gauges_Kills
+ 			Text Offsets: (15,8)
+ 			Value Offsets: (115,8)
+		+ETS Retail:
+			Origin: (0.0, 0.0)
+ 			Offset: (0, 0)
+			Cockpit Target: HerculesM2_CP
+				Canvas Size: (70, 146)
+				Display Offset: (349, 336)
+				Display Size: (88, 350)
+ 			Font: 2
+ 			Filename: ETS3_BG
+ 			Foreground Clip Height: 146
+ 			Letter Offsets: (71,147)
+ 			Top Offsets: (0,0)
+ 			Bottom Offsets: (71,147)
+ 			Gauge Offset: 0
+		+ETS Retail:
+			Origin: (0.0, 0.0)
+ 			Offset: (0, 0)
+			Cockpit Target: HerculesM2_CP
+				Canvas Size: (70, 146)
+				Display Offset: (349, 336)
+				Display Size: (88, 350)
+ 			Font: 2
+ 			Filename: ETS3_R
+ 			Foreground Clip Height: 66
+ 			Letter Offsets: (71,147)
+ 			Top Offsets: (0,0)
+ 			Bottom Offsets: (0,80)
+ 			Gauge Offset: 25
+	;;End RTT Gauges;;
+
+	;;Invisible RTT Gauges;;
+		+Messages:
+ 			Origin: (0.0, 0.0)
+ 			Offset: (0, 0)
+			Cockpit Target: HerculesM2_HUD
+				Canvas Size: (530, 190)
+				Display Offset: (299, 593)
+				Display Size: (530, 190)
+			Color: (0, 127, 0)
+ 			Font: 1
+ 			Max Lines: 11
+			Max Width: 530
+ 			Line Height: 17
+			Hidden By Comms Menu: false
+		+Damage:
+ 			Origin: (0, 0)
+ 			Offset: (0, 0)
+			Cockpit Target: HerculesM2_HUD
+				Canvas Size: (40, 20)
+				Display Offset: (120, 210)
+				Display Size: (80, 40)
+			Color: (0, 127, 0)
+ 			Font: 2
+ 			Top Background Filename: Damage_Blank
+ 			Entry Background Filename: Damage_Blank
+ 			Bottom Background Filename: Damage_Blank
+ 			Header Offsets: (41, 21) 
+ 			Hull Integrity Offsets: (41, 0) 	
+			Hull Integrity Value X-offset: 40
+ 			Top Background Height: 0
+ 			Subsystem Entry Height: 0
+ 			Subsystem List Start Offsets: (41, 21)
+ 			Subsystem Entry Value X-offset: 41
+ 			Bottom Background Offset: 0
+		+Talking Head:
+            Origin: (0.0, 0.0)
+            Offset: (0, 0)
+            Cockpit Target: HerculesM2_HUD
+                Canvas Size: (256, 206)
+                Display Offset: (59, 593)
+                Display Size: (238, 191)
+            Color: (0, 127, 0)
+ 			Font: 2
+    		Filename: TalkingHead
+    		Header Offsets: (6, 2)
+    		Animation Offsets: (3,16)
+    		Animation Size: (250,187)
+		+Primary Weapons:
+    		Origin: (0.0, 0.0)
+    		Offset: (0, 0)
+			Cockpit Target: HerculesM2_HUD
+				Canvas Size: (233, 80)
+				Display Offset: (100, 355)
+				Display Size: (350, 120)
+			Color: (0, 127, 0)
+			Header Offsets: (234, 81)
+			First Background Filename: Weapons_HUDT
+			First Background Height: 33
+			First Background X-offset: 0
+			Entry Background Filename: Weapons_HUDP
+			Entry Background Height: 19
+			Entry Background X-offset: 0
+			Last Background Filename: Weapons_HUDB
+			Last Background X-offset: 0
+			Last Background Y-offset: 0
+			Entry Height: 19
+			List Start Y-offset: 42
+			Ammo X-offset: 125
+			Link X-offset: 33
+			Name X-offset: 234
+		+Secondary Weapons:
+			Origin: (0, 0)
+			Offset: (0, 0)
+			Cockpit Target: HerculesM2_HUD
+				Canvas Size: (233, 80)
+				Display Offset: (730, 355)
+				Display Size: (350, 120)
+			Color: (0, 127, 0)
+			Header Offsets: (234, 81)
+			First Background Filename: Weapons_HUDT
+			First Background Height: 33
+			First Background X-offset: 0
+			Entry Background Filename: Weapons_HUDS
+			Entry Background Height: 19
+			Entry Background X-offset: 0
+			Last Background Filename: Weapons_HUDB
+			Last Background X-offset: 0
+			Last Background Y-offset: 0
+			Entry Height: 19
+			List Start Y-offset: 39
+			Ammo X-offset: 100
+			Link X-offset: 25
+			Name X-offset: 234
+			Unlink X-offset: 33
+			Reload X-offset: 9
+		+Objective Notify:
+ 			Origin: (0, 0)
+ 			Offset: (0, 0)
+			Cockpit Target: HerculesM2_HUD
+				Canvas Size: (237, 34)
+				Display Offset: (217, 818)
+				Display Size: (500, 73)
+			Color: (0, 127, 0)
+ 			Font: 2
+ 			Filename: Objectives
+ 			Objective Text Y-offset: 5
+ 			Objective Value Y-offset: 17
+ 			Subspace Text Y-offset: 5
+ 			Subspace Value Y-offset: 17
+ 			Red Alert Text Y-offset: 5
+ 			Red Alert Value Y-offset: 17
+  		+Squad Message:
+    		Origin: (0, 0)
+    		Offset: (0, 0)
+			Cockpit Target: HerculesM2_HUD
+				Canvas Size: (256, 200)
+				Display Offset: (621, 817)
+				Display Size: (345, 291)
+			Color: (0, 127, 0)
+ 			Font: 2
+ 			Top Background Filename: Comms1
+ 			Entry Background Filename: Comms2
+ 			Bottom Background Filename: Comms3
+ 			Header Offsets: (5,3)
+ 			List Start Offsets: (10,25)
+ 			Top Background Height: 20
+ 			Entry Height: 17
+ 			Command X-offset: 20
+ 			Page Up Offsets: (200,25)
+ 			Page Down Offsets: (200,195)
+ 	 	+Lag:
+    		Origin: (0, 0)
+    		Offset: (0, 0)
+			Cockpit Target: HerculesM2_HUD
+				Canvas Size: (47, 48)
+				Display Offset: (187, 898)
+				Display Size: (105, 106)
+			Color: (0, 127, 0)
+ 			Font: 2
+    		Filename: NetLag
+  		+Mini Target Shields:
+ 			Origin: (0, 0)
+ 			Offset: (0, 0)
+			Cockpit Target: HerculesM2_HUD
+				Canvas Size: (60, 30)
+				Display Offset: (820, 237)
+				Display Size: (120, 60)
+			Color: (0, 127, 0)
+ 			Font: 2
+ 			Filename: Shield
+ 			3 Digit Hull Offsets: (16,11)
+ 			2 Digit Hull Offsets: (18,11)
+ 			1 Digit Hull Offsets: (22,11)
+		+Afterburner Energy:
+ 			Origin: (0, 0)
+ 			Offset: (0, 0)
+			Cockpit Target: HerculesM2_HUD
+				Canvas Size: (17, 64)
+				Display Offset: (5, 179)
+				Display Size: (38, 143)
+			Color: (0, 127, 0)
+ 			Font: 2
+			Filename: HercM2_Energy
+			Foreground Clip Height: 66
+		+Weapon Energy:
+ 			Origin: (0, 0)
+ 			Offset: (0, 0)
+			Cockpit Target: HerculesM2_HUD
+				Canvas Size: (17, 64)
+				Display Offset: (981, 179)
+				Display Size: (38, 143)
+			Color: (0, 127, 0)
+ 			Font: 2
+			Filename: HercM2_Energy
+			Foreground Clip Height: 66
+			Text Offsets: (18, 67)
+		+Text Warnings:
+ 			Origin: (0, 0)
+ 			Offset: (69, 0)
+			Cockpit Target: HerculesM2_HUD
+				Canvas Size: (138, 13)
+				Display Offset: (319, 440)
+				Display Size: (385, 37)
+			Color: (0, 127, 0)
+   			Font: 2
+		+Throttle:
+   			Origin: (0, 0)
+   			Offset: (0, 0)
+			Cockpit Target: HerculesM2_HUD
+				Canvas Size: (141, 256)
+				Display Offset: (0, 0)
+				Display Size: (318, 577)
+			Color: (0, 127, 0)
+   			Font: 2
+			Filename: HercM2_Throttle
+			Foreground Clip Bottom Y-offset: 110
+			Foreground Clip Width: 0
+			Foreground Clip Height: 0
+			Afterburner Clip Height: 0
+			Show Background: Yes
+			Show Max Speed Label: No
+			Show Min Speed Label: No
+			Orbit Center Offsets: (10090, 110)
+			Orbit Radius: 10000
+		+Threat Indicator:
+   			Origin: (0, 0)
+   			Offset: (0, 0)
+			Cockpit Target: HerculesM2_HUD
+				Canvas Size: (141, 256)
+				Display Offset: (706, 0)
+				Display Size: (318, 577)
+			Color: (0, 127, 0)
+			Arc Filename: HercM2_Threat
+			Dumbfire Filename: DumbFire
+			Lock Filename: Lock
+			Dumbfire Offsets: (68, 9)
+			Lock Offsets: (52, 77)
+		+ETS Retail:
+   			Origin: (0, 0)
+   			Offset: (0, 0)
+			Cockpit Target: HerculesM2_HUD
+				Canvas Size: (21, 65)
+				Display Offset: (109, 5)
+				Display Size: (42, 130)
+			Color: (0, 127, 0)
+ 			Font: 2
+ 			Filename: ETS
+ 			Foreground Clip Height: 30
+			Letter Offsets: (32, 66)
+			Top Offsets: (0, 0)
+			Bottom Offsets: (0, 35)
+			Gauge Offset: 8
+	;;End Invisible RTT Gauges;;
+
+	;;Targeting Gauges;;
+	  	+Center Reticle:
+   			Origin: (0.5, 0.5)
+   			Offset: (-18, -20)
+			Color: (0, 255, 0)
+			Cockpit View Choice: cockpitactive
+			Filename: HercM2_Reticle
+	  	+Lead Indicator:
+		+Lead Sight:
+			Color: (0, 255, 0)
+			Cockpit View Choice: cockpitactive
+			Filename: HercM2_Leadsight
+  		+Lock Indicator:
+			Lock Filename: LockIndicatorSpin
+			Locked Filename: LockIndicator
+			Lock Center Offsets: (25,25)
+			Locked Center Offsets: (50,50)
+			Loop Locked Animation: false
+			Blink Locked Animation: true
+  		+Offscreen Indicator:
+  		+Target Brackets:
+  		+Orientation Tee:
+   			Origin: (0.5, 0.5)
+   			Offset: (0, 3)
+   			Radius: 215
+  		+Hostile Triangle:
+   			Origin: (0.5, 0.5)
+   			Offset: (0, 3)
+   			Radius: 200
+  		+Target Triangle:
+   			Origin: (0.5, 0.5)
+   			Offset: (0, 3)
+   			Radius: 200
+  		+Missile Triangles:
+   			Origin: (0.5, 0.5)
+   			Offset: (0, 3)
+   			Radius: 200
+	;;End Targeting Gauges;;
+
+	;;Exta NonRTT Gauges;;
+	  	+Training Messages:
+ 			Origin: (0.5, 0.5)
+ 			Offset: (-133, -215)
+ 			Font: 2
+		+Multiplayer Messages:
+   			Origin: (0.0, 0.5)
+   			Offset: (8, -144)
+   			Font: 2
+  		+Voice Status:
+   			Origin: (0.0, 0.5)
+   			Offset: (8, -129)
+   			Font: 2
+  		+Ping:
+   			Origin: (1.0, 0.0)
+   			Offset: (-128, 5)
+   			Font: 2
+  		+Supernova:
+   			Origin: (0.5, 0.5)
+   			Offset: (-342, -214)
+   			Font: 2
+		+Fixed Messages:
+	;;End Extra NonRTT Gauges;;
+
+	;;CP Inactive/Chase View;;
+	  	+Messages:
+ 			Origin: (0.0, 0.0)
+ 			Offset: (8, 5)
+ 			Font: 2
+			Cockpit View Choice: cockpitinactive
+ 			Max Lines: 5
+ 			Line Height: 17
+  		+Training Messages:
+ 			Origin: (0.5, 0.5)
+ 			Offset: (-133, -215)
+ 			Font: 2
+			Cockpit View Choice: cockpitinactive
+  		+Support:
+ 			Origin: (0.5, 0.5)
+ 			Offset: (-87, 150)
+ 			Font: 2
+			Cockpit View Choice: cockpitinactive
+ 			Filename: 2_support1
+ 			Header Offsets: (5,3)
+ 			Text Y-offset: 20
+ 			Dock Status X-offset: 15
+ 			Dock Time X-offset: 110
+  		+Damage:
+ 			Origin: (0.5, 0.0)
+ 			Offset: (-119, 150)
+ 			Font: 2
+			Cockpit View Choice: cockpitinactive
+ 			Top Background Filename: 2_damage1
+ 			Entry Background Filename: 2_damage2
+ 			Bottom Background Filename: 2_damage3
+ 			Header Offsets: (5,3) 
+ 			Hull Integrity Offsets: (15,25) 
+ 			Hull Integrity Value X-offset: 220 
+ 			Top Background Height: 40 
+ 			Subsystem Entry Height: 16 
+ 			Subsystem List Start Offsets: (20,45)
+ 			Subsystem Entry Value X-offset: 220 
+ 			Bottom Background Offset: 0 
+  		+Wingman Status:
+ 			Origin: (1.0, 0.0)
+ 			Offset: (-156, 230)
+ 			Font: 2
+			Cockpit View Choice: cockpitinactive
+ 			Left Background Filename: 2_wingman1
+ 			Entry Background Filename: 2_wingman2
+ 			Right Background Filename: 2_wingman3
+ 			Dot Filename: 2_wingman4
+ 			Header Offsets: (5,3) 
+ 			Left Background Width: 114
+ 			Entry Width: 57
+ 			Single Wing Offsets: (31,20) 
+ 			Multiple Wing Start Offsets: (62,20) 
+ 			Wing Name Offsets: (35, 50)
+ 			Dot Offsets: (29,5) (19,20) (39,20) (29,35) (12,35) (46,35)
+  		+Auto Speed:
+     		Origin: (1.0, 1.0)
+ 			Offset: (-115, -100)
+ 			Font: 2
+			Cockpit View Choice: cockpitinactive
+ 			Filename: 2_toggleX
+ 			Auto Offsets: (25,3)
+ 			Speed Offsets: (20,18)
+  		+Auto Target:
+ 			Origin: (1.0, 1.0)
+ 			Offset: (-115, -150)
+ 			Font: 2
+			Cockpit View Choice: cockpitinactive
+ 			Filename: 2_toggleX
+ 			Auto Offsets: (25,3)
+ 			Target Offsets: (17,18)
+  		+Countermeasures:
+   		 	Origin: (1.0, 1.0)
+    		Offset: (-120, -195)
+ 			Font: 2
+			Cockpit View Choice: cockpitinactive
+    		Filename: 2_countermeasure1
+    		Text Offsets: (60,8)
+			Value Offsets: (20,8)
+  		;;+Talking Head:
+    		;;Origin: (0.0, 0.0)
+    		;;Offset: (20, 100)
+ 			;;Font: 2
+			;;Cockpit View Choice: cockpitinactive
+    		;;Filename: 2_head1
+    		;;Header Offsets: (6, 3)
+    		;;Animation Offsets: (3,16)
+    		;;Animation Size: (250,187)
+  		;;+Directives:
+ 			;;Origin: (0.0, 0.5)
+ 			;;Offset: (20, -75)
+ 			;;Font: 2
+			;;Cockpit View Choice: cockpitinactive
+ 			;;Top Background Filename: 2_directives1
+ 			;;Entry Background Filename: 2_directives2
+ 			;;Bottom Background Filename: 2_directives3
+ 			;;Header Offsets: (5,4)
+ 			;;Top Background Height: 20
+ 			;;List Start Offsets: (7,23)
+ 			;;Entry Height: 15
+ 			;;Max Line Width: 245
+  		+Weapons:
+ 			Origin: (1.0, 1.0)
+ 			Offset: (-265, -320)
+ 			Font: 2
+			Cockpit View Choice: cockpitinactive
+ 			Primary List Top Background Filename: 2_weapons1_b
+  				Alt Ballistic Filename: 2_weapons1_b
+ 			Primary List Middle Background Filename: 2_weapons2_b
+  				Alt Ballistic Filename: 2_weapons2_b
+ 			Primary List Bottom Background Filename: 2_weapons2_b
+  				Alt Ballistic Filename: 2_weapons2_b
+ 			Secondary List Top Background Filename: 2_weapons3_b
+ 				Alt Ballistic Filename: 2_weapons3_b
+ 			Secondary List Entry Background Filename: 2_weapons2_b
+  				Alt Ballistic Filename: 2_weapons2_b
+ 			Secondary List Bottom Background Filename: 2_weapons5_b
+  				Alt Ballistic Filename: 2_weapons5_b
+ 			Header Offsets: (17,3)
+  				Alt Ballistic Offsets: (17,3)
+ 			Top Primary Background X-offset: 12
+  				Alt Ballistic X-offset: 12
+ 			Text X-offset: 12
+  				Alt Ballistic X-offset: 12
+ 			Top Primary Frame Height: 33
+ 			Top Secondary Frame Height: 12 
+ 			Primary List Start Y-offset: 20
+ 			Secondary List Start Y-offset: 6 
+ 			Primary Weapon Ammo X-offset: 235
+ 			Primary Weapon Link X-offset: 33
+ 			Primary Weapon Name X-offset: 42
+ 			Secondary Weapon Ammo X-offset: 235 
+ 			Secondary Weapon Linked X-offset: 25
+ 			Secondary Weapon Name X-offset: 42
+ 			Secondary Weapon Reload X-offset: -10 
+ 			Primary Weapon Entry Height: 19
+ 			Secondary Weapon Entry Height: 19
+		+Primary Weapons:
+    		Origin: (0.5, 0.5)
+    		Offset: (-164, 55)
+			Cockpit View Choice: cockpitinactive
+			Slew: YES
+			Header Offsets: (10000, 81)
+			First Background Filename: Weapons_HUDT
+			First Background Height: 33
+			First Background X-offset: 0
+			Entry Background Filename: Weapons_HUDP
+			Entry Background Height: 19
+			Entry Background X-offset: 0
+			Last Background Filename: Weapons_HUDB
+			Last Background X-offset: 0
+			Last Background Y-offset: 0
+			Entry Height: 19
+			List Start Y-offset: 42
+			Ammo X-offset: 125
+			Link X-offset: 33
+			Name X-offset: 10000
+		+Secondary Weapons:
+			Origin: (0.5, 0.5)
+			Offset: (40, 55)
+			Cockpit View Choice: cockpitinactive
+			Slew: YES
+			Header Offsets: (10000, 81)
+			First Background Filename: Weapons_HUDT
+			First Background Height: 33
+			First Background X-offset: 0
+			Entry Background Filename: Weapons_HUDS
+			Entry Background Height: 19
+			Entry Background X-offset: 0
+			Last Background Filename: Weapons_HUDB
+			Last Background X-offset: 0
+			Last Background Y-offset: 0
+			Entry Height: 19
+			List Start Y-offset: 39
+			Ammo X-offset: 100
+			Link X-offset: 25
+			Name X-offset: 10000
+			Unlink X-offset: 33
+			Reload X-offset: 9
+  		+Objective Notify:
+ 			Origin: (0.5, 0.5)
+ 			Offset: (-119, -200)
+ 			Font: 2
+			Cockpit View Choice: cockpitinactive
+ 			Filename: 2_objectives1
+ 			Objective Text Y-offset: 5
+ 			Objective Value Y-offset: 17
+ 			Subspace Text Y-offset: 5
+ 			Subspace Value Y-offset: 17
+ 			Red Alert Text Y-offset: 5
+ 			Red Alert Value Y-offset: 17
+  		;;+Squad Message:
+    		;;Origin: (1.0, 0.0)
+    		;;Offset: (-275, 15)
+ 			;;Font: 2
+			;;Cockpit View Choice: cockpitinactive
+ 			;;Top Background Filename: 2_message1
+ 			;;Entry Background Filename: 2_message2
+ 			;;Bottom Background Filename: 2_message3
+ 			;;Header Offsets: (5,3)
+ 			;;List Start Offsets: (10,25)
+ 			;;Top Background Height: 20
+ 			;;Entry Height: 17
+ 			;;Command X-offset: 20
+ 			;;Page Up Offsets: (200,25)
+ 			;;Page Down Offsets: (200,195)
+  		+Lag:
+    		Origin: (0.5, 0.5)
+    		Offset: (115, 145)
+ 			Font: 2
+			Cockpit View Choice: cockpitinactive
+    		Filename: 2_netlag1
+  		+Mini Target Shields:
+ 			Origin: (0.5, 0.5)
+ 			Offset: (130, -21)
+ 			Font: 2
+			Cockpit View Choice: cockpitinactive
+ 			Filename: Shield
+ 			3 Digit Hull Offsets: (16,11)
+ 			2 Digit Hull Offsets: (18,11)
+ 			1 Digit Hull Offsets: (22,11)
+  		+Player Shields:
+    		Scale Gauge: YES
+    		Origin: (0.5, 1.0)
+   	 		Offset: (175, -98)
+			Cockpit View Choice: cockpitinactive
+  		+Target Shields:
+    		Scale Gauge: YES
+    		Origin: (0.5, 1.0)
+    		Offset: (-275, -98)
+			Cockpit View Choice: cockpitinactive
+  		+Escort View:
+ 			Origin: (1.0, 0.5)
+ 			Offset: (-259, -54)
+ 			Font: 2
+			Cockpit View Choice: cockpitinactive
+ 			Top Background Filename: 2_escort1
+ 			Entry Background Filename: 2_escort2
+ 			Bottom Background Filename: 2_escort3
+ 			Entry Height: 19
+ 			Header Text: Monitoring
+ 			Header Offsets: (7,5)
+ 			List Start Offsets: (0,21)
+ 			Hull X-offset: 200
+ 			Name X-offset: 10
+ 			Status X-offset: -15
+ 			Ship Name Max Width: 185
+  		+Mission Time:
+ 			Origin: (1.0, 1.0)
+ 			Offset: (-100, -57)
+ 			Font: 2
+			Cockpit View Choice: cockpitinactive
+ 			Filename: 2_time1
+ 			Text Offsets: (15,8)
+ 			Value Offsets: (43,23)
+  		+Target Monitor:
+ 			Origin: (0.0, 1.0)
+ 			Offset: (20, -275)
+ 			Font: 2
+			Cockpit View Choice: cockpitinactive
+ 			Monitor Filename: 2_targetview1
+ 			Integrity Bar Filename: 2_targetview2x
+ 			Viewport Offsets: (4,67)
+ 			Viewport Size: (208,179)
+ 			Integrity Bar Offsets: (211,83)
+ 			Integrity Bar Foreground Clip Height: 154
+ 			Status Offsets: (180,88)
+ 			Name Offsets: (14,-5)
+ 			Class Offsets: (14,10)
+ 			Distance Offsets: (14,29)
+ 			Speed Offsets: (120,29)
+ 			Hull Offsets: (210,69)
+ 			Cargo Contents Offsets: (14,50)
+ 			Cargo Scan Start Offsets: (4,67)
+ 			Cargo Scan Size: (208,179)
+ 			Subsystem Name Offsets: (15,245)
+ 			Subsystem Integrity Offsets: (200,245)
+ 			Disabled Status Offsets: (75,100)
+  		+Extra Target Data:
+ 			Origin: (0.0, 1.0)
+ 			Offset: (20, -327)
+ 			Font: 2
+			Cockpit View Choice: cockpitinactive
+ 			Filename: 2_targetview3
+ 			Bracket Offsets: (0,0)
+ 			Dock Offsets: (15,25)
+ 			Dock Max Width: 300
+ 			Order Offsets: (15,-5)
+ 			Order Max Width: 300
+ 			Time Offsets: (15,10)
+  		+Radar:
+    		Origin: (0.5, 1.0)
+    		Offset: (-157 -262)
+ 			Font: 2
+			Cockpit View Choice: cockpitinactive
+    		Filename: 2_radarx
+ 			Radar Center Offsets: (154,128)
+ 			Radar Size: (288,240)
+ 			Infinity Distance Offsets: (276,225)
+ 			Long Distance Offsets: (272,225)
+ 			Short Distance Offsets: (278,225)
+  		+Afterburner Energy:
+ 			Origin: (0.5, 0.5)
+ 			Offset: (-219, -48)
+ 			Font: 2
+			Cockpit View Choice: cockpitinactive
+			Filename: HercM2_Energy
+			Foreground Clip Height: 66
+		+Weapon Energy:
+ 			Origin: (0.5, 0.5)
+ 			Offset: (202, -48)
+ 			Font: 2
+			Cockpit View Choice: cockpitinactive
+			Filename: HercM2_Energy
+			Foreground Clip Height: 66
+			Text Offsets: (18, 67)
+  		+Text Warnings:
+   			Origin: (0.5, 0.5)
+   			Offset: (0, 72)
+   			Font: 2
+			Cockpit View Choice: cockpitinactive
+		+Center Reticle:
+   			Origin: (0.5, 0.5)
+   			Offset: (-18, -20)
+			Cockpit View Choice: cockpitinactive
+			Filename: HercM2_Reticle
+		+Throttle:
+   			Origin: (0.5, 0.5)
+   			Offset: (-221, -128)
+   			Font: 2
+			Cockpit View Choice: cockpitinactive
+			Filename: HercM2_Throttle
+			Foreground Clip Bottom Y-offset: 110
+			Foreground Clip Width: 0
+			Foreground Clip Height: 0
+			Afterburner Clip Height: 0
+			Show Background: Yes
+			Show Max Speed Label: No
+			Show Min Speed Label: No
+			Orbit Center Offsets: (10090, 110)
+			Orbit Radius: 10000
+		+Threat Indicator:
+   			Origin: (0.5, 0.5)
+   			Offset: (80, -128)
+			Cockpit View Choice: cockpitinactive
+			Arc Filename: HercM2_Threat
+			Dumbfire Filename: DumbFire
+			Lock Filename: Lock
+			Dumbfire Offsets: (68, 9)
+			Lock Offsets: (52, 77)
+		+Lead Sight:
+			Color: (0,255,255)
+			Cockpit View Choice: cockpitinactive
+			Filename: HercM2_Leadsight
+  		+Kills:
+ 			Origin: (1.0, 1.0)
+ 			Offset: (-253, -195)
+ 			Font: 2
+			Cockpit View Choice: cockpitinactive
+ 			Filename: 2_kills1
+ 			Text Offsets: (15,8)
+ 			Value Offsets: (115,8)
+  		+Fixed Messages:
+			Cockpit View Choice: cockpitinactive
+		+ETS Retail:
+   			Origin: (0.5, 0.5)
+   			Offset: (-175, -127)
+ 			Font: 2
+			Cockpit View Choice: cockpitinactive
+			Slew: YES
+ 			Filename: ETS
+ 			Foreground Clip Height: 30
+			Letter Offsets: (10000, 66)
+			Top Offsets: (0, 0)
+			Bottom Offsets: (0, 35)
+			Gauge Offset: 8
+  		+ETS Retail:
+ 			Origin: (1.0, 1.0)
+ 			Offset: (-225, -160)
+ 			Font: 2
+			Cockpit View Choice: cockpitinactive
+ 			Filename: 2_energy1
+ 			Foreground Clip Height: 66
+ 			Letter Offsets: (5,70)
+ 			Top Offsets: (0,0)
+ 			Bottom Offsets: (0,80)
+ 			Gauge Offset: 25
+	;;End Cockpit Inactive/Chase View;;
+
+ 	$End Gauges
+#End
